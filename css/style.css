@@ -485,7 +485,7 @@ body::after {
 .menu__link {
   padding: .625rem;
   position: relative;
-  transition: all .3s
+  transition: color .3s
 }
 .menu__link::before {
   content: "";
@@ -495,7 +495,7 @@ body::after {
   width: 100%;
   height: 0;
   background-color: #3a3ba9;
-  transition: all .3s
+  transition: height .3s
 }
 .menu__link span {
   position: relative;
@@ -650,7 +650,7 @@ body::after {
   column-gap: 1.25rem;
   row-gap: 2.5rem;
   justify-items: space-between;
-  padding-bottom: 5rem
+  padding-bottom: 6.25rem
 }
 .chrono__footer {
   position: absolute;
@@ -658,7 +658,7 @@ body::after {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: .625rem;
+  padding: 1.25rem .625rem;
   padding-bottom: 0;
   display: flex;
   justify-content: center
@@ -674,12 +674,11 @@ body::after {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 1.875rem
+  gap: 1.25rem
 }
 .item-chrono__title {
   color: #b8001f;
   font-weight: 600;
-  line-height: 1.5;
   font-size: 1.5rem
 }
 .item-chrono__info {
@@ -687,7 +686,7 @@ body::after {
   font-weight: 600;
   display: flex;
   flex-direction: column;
-  gap: .625rem
+  gap: .4375rem
 }
 .item-chrono__info span {
   color: #3a3ba9;
@@ -1236,11 +1235,17 @@ body::after {
   .chrono__body--big {
     max-height: 48.75rem
   }
+  .item-chrono {
+    gap: 1.875rem
+  }
   .history--problems .item-chrono {
     flex-direction: row
   }
   .history--problems .item-chrono__title {
     flex: 0 0 100%
+  }
+  .item-chrono__info {
+    gap: .625rem
   }
   .item-chrono__info {
     font-size: 1.25rem
